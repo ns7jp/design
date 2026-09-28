@@ -4,6 +4,14 @@
 
 > 登場する企業・数値・IPアドレスはすべて演習用の架空設定です(WANの例示IPアドレスにはRFC5737のTEST-NET-3を使用しています)。文書内の担当者名・日付・レビュー履歴も演習用の記入例を含み、実顧客への納品・検収実績を示すものではありません。
 
+## このリポジトリの位置づけ
+
+- **学習用の副作品です。** 主作品は [ns7jp/server](https://github.com/ns7jp/server) で、本人が手元のVMで操作した記録はそちらにまとめています。
+- **AI支援で作成した部分が大きいです。** 13文書の本体は、AIツール（Claude Code）の支援で作成しました（`claude/design-doc-basics-portfolio-v7a8eu` ブランチからのマージ、コミット作者 `Claude`）。その後の実施状況の整理は `codex/portfolio-evidence-entry-20260911` ブランチ（OpenAI Codex）から取り込んでいます。2026-09-28 時点で確認できる範囲です。
+- **本人による実行記録:** なし。9台構成の構築・試験は、本人が実施した記録がありません（[テスト仕様書](docs/10_テスト仕様書.md)の実施結果欄は未記入）。
+- **主作品との関係:** 主作品の案件パック（`docs/build-package*`）でも、要件定義・基本設計・パラメータシート・構築手順・試験仕様と同じ種類の文書を作っており、そのうち [AD](https://github.com/ns7jp/server/blob/main/docs/build-package-ad/README.md)・[WSUS](https://github.com/ns7jp/server/blob/main/docs/build-package-wsus/README.md) のパックには本人が手元のVMで構築・試験した記録があります。実行記録と結び付いているのは主作品側で、この教材は設計書の書き方を練習するためのものです。
+- **主作品との食い違い:** 同じ役割でも選んだ製品が異なります。認証は OpenLDAP（主作品は Active Directory）、DHCP は Kea DHCP（主作品は isc-dhcp-server）です。BIND・MariaDB・Samba は主作品では扱っていません。Zabbix と AlmaLinux は主作品にもあります（[Zabbix 構築案件パック](https://github.com/ns7jp/server/blob/main/docs/build-package-zabbix/README.md)、AlmaLinux の基盤構築の記録）。
+
 ## 採用ご担当者様へ：成果物と実施状況
 
 **このリポジトリで確認できる成果物は、要件・設計理由・構築手順・試験条件をつなぐ13文書の教材です。** 2026年9月11日時点の公開資料で確認できる範囲を示します。
